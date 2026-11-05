@@ -1,0 +1,138 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Technical architecture diagram for Assignment">
+  <defs>
+    <style>
+      .title { font: 700 32px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .section { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #1f2937; }
+      .layer { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .label { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #111827; }
+      .small { font: 500 14px 'Segoe UI', Arial, sans-serif; fill: #475569; }
+      .sub { font: 500 12px 'Segoe UI', Arial, sans-serif; fill: #64748b; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 18; }
+      .frontend { fill: #ecfeff; stroke: #22d3ee; }
+      .backend { fill: #fef3c7; stroke: #f59e0b; }
+      .data { fill: #ede9fe; stroke: #8b5cf6; }
+      .infra { fill: #ecfdf5; stroke: #10b981; }
+      .security { fill: #eff6ff; stroke: #3b82f6; }
+      .line { stroke: #475569; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #64748b; stroke-width: 2; stroke-dasharray: 7 7; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <text x="800" y="52" text-anchor="middle" class="title">Technical Architecture - Assignment</text>
+
+  <!-- Client Layer -->
+  <rect x="80" y="110" width="250" height="720" class="box"/>
+  <text x="205" y="150" text-anchor="middle" class="section">Client Layer</text>
+
+  <rect x="110" y="190" width="190" height="120" class="frontend"/>
+  <text x="205" y="230" text-anchor="middle" class="label">Web Browser</text>
+  <text x="205" y="255" text-anchor="middle" class="small">Admin Portal</text>
+  <text x="205" y="278" text-anchor="middle" class="small">HR / Employee UI</text>
+
+  <rect x="110" y="350" width="190" height="120" class="frontend"/>
+  <text x="205" y="390" text-anchor="middle" class="label">Responsive App</text>
+  <text x="205" y="415" text-anchor="middle" class="small">React + Vite</text>
+  <text x="205" y="438" text-anchor="middle" class="small">TypeScript UI</text>
+
+  <rect x="110" y="510" width="190" height="120" class="frontend"/>
+  <text x="205" y="550" text-anchor="middle" class="label">Auth &amp; State</text>
+  <text x="205" y="575" text-anchor="middle" class="small">Local session</text>
+  <text x="205" y="598" text-anchor="middle" class="small">Context + APIs</text>
+
+  <!-- Frontend App -->
+  <rect x="390" y="110" width="280" height="720" class="box"/>
+  <text x="530" y="150" text-anchor="middle" class="section">Frontend Layer</text>
+
+  <rect x="430" y="190" width="200" height="110" class="frontend"/>
+  <text x="530" y="225" text-anchor="middle" class="label">React Components</text>
+  <text x="530" y="250" text-anchor="middle" class="small">Dashboard</text>
+  <text x="530" y="272" text-anchor="middle" class="small">Employees / Leaves / Payroll</text>
+
+  <rect x="430" y="340" width="200" height="110" class="frontend"/>
+  <text x="530" y="375" text-anchor="middle" class="label">Routing</text>
+  <text x="530" y="400" text-anchor="middle" class="small">Protected pages</text>
+  <text x="530" y="422" text-anchor="middle" class="small">Role-based access</text>
+
+  <rect x="430" y="490" width="200" height="110" class="frontend"/>
+  <text x="530" y="525" text-anchor="middle" class="label">API Client</text>
+  <text x="530" y="550" text-anchor="middle" class="small">Fetch calls</text>
+  <text x="530" y="572" text-anchor="middle" class="small">localhost:8080</text>
+
+  <rect x="430" y="640" width="200" height="110" class="frontend"/>
+  <text x="530" y="675" text-anchor="middle" class="label">UI Styling</text>
+  <text x="530" y="700" text-anchor="middle" class="small">CSS / layouts</text>
+  <text x="530" y="722" text-anchor="middle" class="small">Charts &amp; tables</text>
+
+  <!-- API / Application Layer -->
+  <rect x="760" y="110" width="340" height="720" class="box"/>
+  <text x="930" y="150" text-anchor="middle" class="section">API Application Layer</text>
+
+  <rect x="810" y="190" width="240" height="110" class="backend"/>
+  <text x="930" y="225" text-anchor="middle" class="label">Spring Boot App</text>
+  <text x="930" y="250" text-anchor="middle" class="small">EmsApplication</text>
+  <text x="930" y="272" text-anchor="middle" class="small">Java 17</text>
+
+  <rect x="810" y="340" width="240" height="110" class="backend"/>
+  <text x="930" y="375" text-anchor="middle" class="label">Controllers</text>
+  <text x="930" y="400" text-anchor="middle" class="small">AuthController</text>
+  <text x="930" y="422" text-anchor="middle" class="small">Employee / Reports APIs</text>
+
+  <rect x="810" y="490" width="240" height="110" class="backend"/>
+  <text x="930" y="525" text-anchor="middle" class="label">Services</text>
+  <text x="930" y="550" text-anchor="middle" class="small">Business logic</text>
+  <text x="930" y="572" text-anchor="middle" class="small">Data aggregation</text>
+
+  <rect x="810" y="640" width="240" height="110" class="backend"/>
+  <text x="930" y="675" text-anchor="middle" class="label">DTOs / Models</text>
+  <text x="930" y="700" text-anchor="middle" class="small">LoginRequest</text>
+  <text x="930" y="722" text-anchor="middle" class="small">Responses / Entities</text>
+
+  <!-- Data Layer -->
+  <rect x="1180" y="110" width="300" height="720" class="box"/>
+  <text x="1330" y="150" text-anchor="middle" class="section">Data &amp; Infra</text>
+
+  <rect x="1215" y="190" width="230" height="110" class="data"/>
+  <text x="1330" y="225" text-anchor="middle" class="label">Database</text>
+  <text x="1330" y="250" text-anchor="middle" class="small">MySQL / PostgreSQL</text>
+  <text x="1330" y="272" text-anchor="middle" class="small">Employees / payroll / users</text>
+
+  <rect x="1215" y="340" width="230" height="110" class="data"/>
+  <text x="1330" y="375" text-anchor="middle" class="label">Cache / Session</text>
+  <text x="1330" y="400" text-anchor="middle" class="small">Redis optional</text>
+  <text x="1330" y="422" text-anchor="middle" class="small">Fast access layer</text>
+
+  <rect x="1215" y="490" width="230" height="110" class="infra"/>
+  <text x="1330" y="525" text-anchor="middle" class="label">Hosting</text>
+  <text x="1330" y="550" text-anchor="middle" class="small">AWS EC2 / ECS</text>
+  <text x="1330" y="572" text-anchor="middle" class="small">Load balancer + SSL</text>
+
+  <rect x="1215" y="640" width="230" height="110" class="security"/>
+  <text x="1330" y="675" text-anchor="middle" class="label">Security</text>
+  <text x="1330" y="700" text-anchor="middle" class="small">IAM / Secrets Manager</text>
+  <text x="1330" y="722" text-anchor="middle" class="small">WAF / CloudWatch</text>
+
+  <!-- Flow arrows -->
+  <path d="M330 250 L390 250" class="line"/>
+  <path d="M670 250 L760 250" class="line"/>
+  <path d="M1100 250 L1180 250" class="line"/>
+
+  <path d="M530 300 L530 340" class="dash"/>
+  <path d="M930 300 L930 340" class="dash"/>
+  <path d="M1330 300 L1330 340" class="dash"/>
+
+  <path d="M330 410 L390 410" class="line"/>
+  <path d="M670 410 L760 410" class="line"/>
+
+  <path d="M330 570 L390 570" class="line"/>
+  <path d="M670 570 L760 570" class="line"/>
+
+  <path d="M1050 695 L1215 695" class="line"/>
+
+  <!-- Bottom notes -->
+  <rect x="245" y="860" width="1110" height="70" class="box"/>
+  <text x="800" y="890" text-anchor="middle" class="layer">Flow: Browser → React Frontend → Spring Boot API → Database / Infra Services → Security &amp; Monitoring</text>
+  <text x="800" y="915" text-anchor="middle" class="sub">Built for deployment on AWS with scalable, secure, and modular service boundaries</text>
+</svg>
